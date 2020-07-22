@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    background-image: radial-gradient(rgb(41, 37, 37) 40%,#131212 90% );
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+/* ---------------------Navigation Start-----------------------------------*/
+.hamburger div{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: #048585;
+    z-index: 2;
+}
+.hamburger{
+    display: none;
+}
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    transition: .5s ease;
+    z-index: 1000;
+}
+.logo{
+    height: 12vh;
+    width: 12vh;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+}
+.links {
+    list-style: none;
+}
+.links a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1em 0;
+}
+.link, .contact-button button{
+    margin-left: 40px;
+}
+.links li:hover:nth-child(4){
+    margin-right: 0px;
+}
+.contact-button button{
+    background: linear-gradient(-125deg, #025e5e, rgb(0, 247, 255));
+    border: none;
+    border-radius: 15px;
+    padding:8px 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    align-self: center;
+}
+
+/* ---------------------Navigation SHover Start--------------------------*/
+.links li:hover:nth-child(1), .links li:hover:nth-child(2), .links li:hover:nth-child(3),
+.links li:hover:nth-child(4){
+    border-bottom: solid 2px #048585;
+    transition: all .4s ease;
+    text-shadow: 0 0 10px rgb(0, 247, 255);
+} 
+.contact-button button:hover, .left-presentation button:hover{
+    background: transparent;
+    transition: all .4s ease;
+    color: #ffffff;
+    box-shadow: 0 0 12px  rgb(0, 247, 255);
+    text-shadow: 0 0 5px  rgb(0, 247, 255);
+}
+/* ---------------------Navigation SHover Start--------------------------*/
+/* ---------------------Navigation End-----------------------------------*/
+
+/* ---------------------Presentation Start-------------------------------*/
+#presentation{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 120px auto 160px;
+    color: #cff7f3;
+    position: relative;
+    width: 80%;
+}
+.left-presentation{
+    flex: 1;
+    font-size: 16px;
+    animation: text 1s;
+    transition: all ease;
+}
+.right-presentation{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+.right-presentation img{
+    height: 60vh;
+    animation: mypic 2s;
+}
+.left-presentation h1{
+    color: #048585;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.left-presentation p{
+    line-height: 22px;
+    
+}
+.left-presentation span{
+    color: #048585;
+    line-height: 36px;
+}
+.left-presentation button{
+    background: linear-gradient(-125deg, #025e5e, rgb(0, 247, 255));
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 8px 24px;
+    letter-spacing: 1px;
+    margin-top: 26px;
+    margin-left: 120px;
+    
+
+}
+.project-button a{
+    text-decoration: none;
+    
+}
+@keyframes text{
+    0%{
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes mypic{
+    0%{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#presentation .arrow{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+}
+.arrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid rgb(0, 247, 255);
+    border-right: 5px solid rgb(0, 247, 255);
+    transform: rotate(45deg);
+    animation: arrow 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: .2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: .4s;
+}
+
+@keyframes arrow{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+/* ---------------------Presentation End-------------------------------*/
+/* ---------------------Skills Start-----------------------------------*/
+#background-skills{
+    width: 100%;
+    margin: 100px 0;
+    background: url(/images/131247-abstract-dark-grey-polygonal-background-design.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#skills-container{
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    color: #b9d8d5;
+    background-color: #1110109d;
+    
+}
+.left-skills{
+    flex-basis: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.right-skills{
+    flex-basis: 40%;
+    text-align: center;
+    
+}
+.left-skills li {
+    list-style: none;
+    margin: 30px 0;
+    position: relative;
+}
+.bar{
+    background: #b9d8d5;
+    display: block;
+    height: 12px;
+    border: 1px solid rgba(0,0,0,0,3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(34, 31, 31);
+   
+}
+.left-skills li .progress-value{
+    display: block;
+    font-size: 8px;
+    color: rgb(58, 56, 56);
+    position: absolute;
+    top: 80%;
+    right: 5px;
+}
+.bar span{
+    height: 12px;
+    float: left;
+    background: rgb(58, 56, 56);
+    
+}
+.html{
+    width: 0%;
+    transition: 1s;
+}
+.show{
+    width: 90%;
+}
+.css{
+    width: 0%;
+    transition: 1s;
+}
+.show-css{
+    width: 80%;
+}
+.javascript{
+    width: 0%;
+    transition: 1s;
+}
+.show-javascript{
+    width: 70%;
+}
+
+/* ---------------------Skills End-------------------------------------*/
+/* ---------------------About Start------------------------------------*/
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #cff7f3;
+    width: 80%;
+    margin: 100px auto 170px;
+}
+#about h2{
+    color: #048585;
+    font-size: 30px;
+    
+}
+.left-about{
+    flex: 1;
+}
+.right-about{
+    flex: 1;
+    align-self: flex-end;
+    position: relative;
+    animation: text 1s;
+    transition: all ease;
+}
+.left-about img{
+    height: 60vh;
+}
+/* ---------------------Social Icon Start------------------------------*/
+.right-about .social-icons{
+    position: absolute;
+    left: -40px;
+    bottom: -30px;
+    width: 200px;
+}
+.social-icons ul{
+    list-style: none;
+}
+.social-icons ul li{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 3px;
+    border-radius: 50%;
+    text-align: center;
+    border: solid 3px #444c47;
+    float: left;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.social-icons ul li .fab{
+    color: #048585;
+    transition: all 0.5s ease;
+}
+.social-icons ul li:hover.linkedin{
+    border: 3px solid #0e76a8;
+    box-shadow: 0 0 15px #0e76a8;
+    transition: all 0.5s ease;
+}
+.social-icons ul li:hover .fa-linkedin-in{
+    color: #0e76a8;
+    text-shadow: 0 0 15px #0e76a8;
+    transition: all 0.5s ease;
+}
+.social-icons ul li:hover.instagram{
+    border: 3px solid #e1306c;
+    box-shadow: 0 0 15px #e1306c;
+    transition: all 0.5s ease;
+}
+.social-icons ul li:hover .fa-instagram{
+    color: #e1306c;
+    text-shadow: 0 0 15px #e1306c;
+    transition: all 0.5s ease;
+}
+/* ---------------------Social Icon End--------------------------------*/
+/* ---------------------About End------------------------------------*/
+/* ---------------------Contact Us Start------------------------------*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    min-width: 300px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    background: url(/images/131247-abstract-dark-grey-polygonal-background-design.jpg);
+    background-size: cover;
+    box-shadow: 4px -6px 8px rgb(22, 22, 22);
+}
+.container .contact-info {
+    flex: 1;
+    background-color: #444c47;
+    height: 100%;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    background-image: linear-gradient( 110.3deg,  rgb(55, 57, 59) 8.8%, rgb(39, 41, 43) 95.1% );
+    box-shadow: 4px -6px 8px rgb(22, 22, 22);
+}
+.info{
+    padding-bottom: 60px;
+}
+.container .contact-info .info li{
+    list-style: none;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    opacity: 0.5;
+}
+.container .contact-info .info span img:first-child {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+}
+.container .contact-info .social-contact {
+    padding: 0;
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    flex: 1;
+    list-style: none;
+    
+}
+.container .contact-info .social-contact img{
+    width: 80%;
+    height: 80%;
+    opacity: 0.5;
+    margin: 0;
+}
+.container .contact-us {
+    flex: 2;
+    height: 80%;
+    width: 100%;
+    max-width: 500px;
+}
+.container .contact-info  img {
+ width: 100%;
+ height: 100%;
+}
+.container .contact-us h2{
+    text-align: center;
+    font-size: 30px;
+    color: #dbdbdb;
+    font-weight: 400;
+}
+.container .contact-info li:hover{
+    opacity: 1;
+}
+#form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   margin: 20px auto;
+}
+#form .input{
+    width: 80%;
+    margin-bottom: 10px;
+    height: 3vh;
+    border-radius: 4px;
+}
+#form textarea{
+    width: 80%;
+    border-radius: 4px;
+    height: 12vh;
+    resize: none;
+}
+#form .submit{
+    width: 83%;
+    border-radius: 6px;
+    height: 5vh;
+    margin-top: 20px;
+    background-image: linear-gradient( 110.3deg,  rgb(55, 57, 59) 8.8%, rgb(39, 41, 43) 95.1% );
+    color: #cff7f3;
+    outline: none;
+    border: none;
+}
+input, textarea{
+    background-color: rgb(71, 69, 69);
+    color: rgb(255, 238, 238);
+    padding: 5px;
+}
+/* ---------------------ContactUs End------------------------------*/
+
+@media screen and (max-width:600px){
+    html {
+        overflow-x: hidden;
+   
+   }
+   
+   
+   body {
+       overflow-x: hidden;
+       position: relative;
+   
+   }
+    .right-presentation{
+        justify-content: center;
+        padding-bottom: 0px;
+        margin: auto;
+    }
+    .right-presentation img{
+        height: 40vh;   
+    }
+    .left-presentation h1{
+        font-size: 24px;
+    }
+    .left-presentation p{
+        line-height: 16px;
+        font-size: 14px;
+    }
+    .left-presentation span{
+        line-height: 16px;
+        font-size: 14px;
+    }
+    .left-presentation button{
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    #presentation{
+        flex-direction: column;
+        justify-content:center;
+    }
+    #presentation .arrow{
+        display: none;
+    }
+    #background-skills{
+    width: 100%;
+}
+#skills-container{
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    
+}
+.left-skills{
+    flex: 3;
+    min-width: 280px;
+    
+}
+.right-skills{
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    
+}
+.left-skills li {
+    list-style: none;
+    margin: 20px auto;
+    position: relative;
+}
+#about{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+#about h2{
+    color: #048585;
+    font-size: 24px;
+    
+}
+.left-about{
+    flex: 1;
+}
+.right-about{
+    flex: 1;
+}
+.right-about p{
+    font-size: 14px;
+}
+.left-about img{
+    height: 40vh;
+}
+
+.links{
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(41, 37, 37);
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    align-self: center;
+    width: 70%;
+    max-width: 400px;
+    padding: 0;
+    transform: translate(100%);
+    transition: all 0.5s ease-in;
+    font-size: 14px;
+    
+}
+.link {
+    margin: 60px 120px 30px 0;
+}
+.links .contact-button{
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    
+}
+.links .link, .links .contact-button{
+    opacity: 0;
+}
+.link, .contact-button button{
+    margin-left: 0;
+    font-size: 14px;
+}
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+.container .contact-info .social-contact img{
+    width: 60%;
+    height: 60%;
+}
+.info{
+    padding-bottom: 20px;
+}
+.container .contact-info .info li{
+    margin-left: 0;
+    opacity: 0.5;
+    font-size: 12px;
+}
+.container .contact-info .info span img:first-child {
+    width: 10px;
+    height: 10px;
+}
+.container .contact-us h2{
+    color: #1d1d1d;
+}
+}
+.nav-active{
+    transform: translate(0%);
+}
+
+@keyframes navFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(50px);
+    }
+}
