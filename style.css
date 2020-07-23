@@ -207,6 +207,10 @@ header{
 }
 /* ---------------------Presentation End-------------------------------*/
 /* ---------------------Skills Start-----------------------------------*/
+#skills-margin{
+    margin-top: 60px;
+    padding: 20px 20px 0;
+}
 #background-skills{
     width: 100%;
     margin: 100px 0;
@@ -441,7 +445,7 @@ header{
     color: #dbdbdb;
     font-weight: 400;
 }
-.container .contact-info li:hover{
+.container .contact-info li:hover, .container .contact-info .social-contact img:hover{
     opacity: 1;
 }
 #form{
@@ -594,11 +598,11 @@ input, textarea{
     
 }
 .link {
-    margin: 60px 120px 30px 0;
+    margin: 60px 120px 10px 0;
 }
 .links .contact-button{
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     right: 50%;
     
 }
@@ -613,6 +617,11 @@ input, textarea{
     display: block;
     cursor: pointer;
 }
+.links li:hover:nth-child(1), .links li:hover:nth-child(2), .links li:hover:nth-child(3),
+.links li:hover:nth-child(4){
+    border-bottom: none;
+    text-shadow: 0 0 10px rgb(0, 247, 255);
+} 
 .container .contact-info .social-contact img{
     width: 60%;
     height: 60%;
@@ -631,6 +640,19 @@ input, textarea{
 }
 .container .contact-us h2{
     color: #1d1d1d;
+    font-weight: 600;
+}
+.container .contact-info {
+    
+    box-shadow: none;
+    background: none;
+}
+.container {
+    flex-direction: column-reverse;
+}
+.container .contact-info .info li{
+    color: #000000;
+    font-weight: 500;
 }
 }
 .nav-active{
