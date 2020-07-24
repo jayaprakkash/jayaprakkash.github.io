@@ -657,7 +657,7 @@ footer{
 }
 .links .contact-button{
     position: absolute;
-    bottom: 5vh;
+    bottom: 0;
     right: 30%;
     
 }
