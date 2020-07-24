@@ -636,7 +636,7 @@ footer{
 .links{
     position: absolute;
     right: 0;
-    height: 92vh;
+    height: 80vh;
     top: 8vh;
     background-color: rgb(41, 37, 37);
     flex-direction: column;
