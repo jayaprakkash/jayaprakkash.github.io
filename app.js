@@ -15,6 +15,7 @@ const navSlider = ()=>{
             }
 
         });
+        burger.classList.toggle('toggle');
     });
 }
 
