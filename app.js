@@ -1,3 +1,7 @@
+$(window).on("load", function(){
+    $(".loader-container").fadeOut(1000);
+});
+
 const navSlider = ()=>{
     const burger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.links');
