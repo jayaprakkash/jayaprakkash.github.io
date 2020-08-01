@@ -13,6 +13,45 @@ body{
     padding: 0;
 
 }
+.loader-container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(31, 28, 28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.loader-container h2{
+    font-size: 36px;
+    color: #048585;
+    margin-right: 20px;
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #525252;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+@keyframes loader{
+    25%{
+        color: #042286;
+    }
+    50%{
+        color: #048585;
+    }
+    75%{
+        color: #3f08be;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 /* ---------------------Navigation Start-----------------------------------*/
 .hamburger div{
     width: 30px;
@@ -40,7 +79,7 @@ header{
     left: 0;
     height: 100px;
     transition: .5s ease;
-    z-index: 1000;
+    z-index: 998;
 }
 .logo{
     height: 12vh;
