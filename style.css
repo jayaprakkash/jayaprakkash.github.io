@@ -101,6 +101,7 @@ header{
     cursor: pointer;
     display: inline-block;
     padding: 1em 0;
+    line-height: 50px;
 }
 .link, .contact-button button{
     margin-left: 40px;
@@ -122,7 +123,7 @@ header{
 /* ---------------------Navigation SHover Start--------------------------*/
 .links li:hover:nth-child(1), .links li:hover:nth-child(2), .links li:hover:nth-child(3),
 .links li:hover:nth-child(4){
-    border-bottom: solid 2px #048585;
+    border-bottom: solid 1.5px #048585;
     transition: all .4s ease;
     text-shadow: 0 0 10px rgb(0, 247, 255);
 } 
@@ -602,7 +603,18 @@ footer{
     color: rgb(71, 69, 69);
 }
 /* ---------------------Footer End------------------------------*/
-
+/* ---------------------Project Start---------------------------*/
+#project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #b8b9b9;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+/* ---------------------Project End-----------------------------*/
 @media screen and (max-width:600px){
     html {
         overflow-x: hidden;
@@ -611,7 +623,7 @@ footer{
        overflow-x: hidden;
        position: relative;
    }
-    .loader-container h2{
+   .loader-container h2{
     font-size: 24px;
     color: #048585;
     margin-right: 20px;
@@ -703,10 +715,13 @@ footer{
     font-size: 14px;
 }
 .left-about img{
-    height: 30vh;
+    height: 20vh;
     width: 70%;
     display: block;
     margin: auto;
+}
+.links a{
+    line-height: 20px;
 }
 
 .links{
