@@ -118,6 +118,10 @@ header{
     font-weight: 600;
     color: #ffffff;
     align-self: center;
+    cursor: pointer;
+}
+.contact-button a{
+    cursor: default;
 }
 
 /* ---------------------Navigation SHover Start--------------------------*/
@@ -159,7 +163,7 @@ header{
 .right-presentation::after{
     content: "";
     position: absolute;
-    top:28px;
+    top:36px;
     width: 100%;
     height: 80%;
     background: linear-gradient(to top, rgb(31, 28, 28), transparent);
@@ -180,7 +184,7 @@ header{
 }
 .right-presentation img{
     height: 60vh;
-    animation: mypic 2s;
+    animation: mypic 1s;
 }
 .left-presentation h1{
     color: #048585;
@@ -194,6 +198,12 @@ header{
 .left-presentation span{
     color: #048585;
     line-height: 36px;
+}
+.left-presentation .presentation-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
 }
 .left-presentation .project-button{
     background: linear-gradient(-125deg, #025e5e, rgb(0, 247, 255));
@@ -215,11 +225,9 @@ header{
     padding: 8px 24px;
     letter-spacing: 1px;
     margin-top: 26px;
-    margin-left: 30px;
-    
 
 }
-.project-button a{
+.left-presentation a{
     text-decoration: none;
     
 }
