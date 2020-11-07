@@ -1,7 +1,6 @@
 $(window).on("load", function(){
     $(".loader-container").fadeOut(1000);
 });
-
 const navSlider = ()=>{
     const burger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.links');
@@ -68,3 +67,33 @@ var controller =new ScrollMagic.Controller();
         })
         .setClassToggle('.javascript', 'show-javascript')
         .addTo(controller);
+
+var num = 0;
+var images = ["/images/MasalSite.PNG",
+               "/images/Blog.PNG", 
+              "/images/Education.PNG",
+            "/images/MasalaSurveyFrom.PNG"];
+var caption = ["Masala Site",
+               "Personal Blog",
+               "Education Website",
+               "Masala Survey"];
+
+function next(){
+    var slider = document.getElementById('slider');
+    num++;
+    if(num>=images.length){
+        num=0
+    }
+    slider.src = images[num];
+    document.getElementById("caption").innerHTML = caption[num];
+}
+
+function prev(){
+    var slider = document.getElementById('slider');
+    num--;
+    if(num<0){
+        num = images.length-1;
+    }
+    slider.src = images[num];
+    document.getElementById("caption").innerHTML = caption[num];
+}
