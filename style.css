@@ -909,6 +909,9 @@ footer{
     padding: 5px;
     margin-top: 10px;
 }
+.project-button button:hover{
+    background-color: rgb(209, 212, 212);
+}
 
 }
 .nav-active{
