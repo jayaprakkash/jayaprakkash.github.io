@@ -676,6 +676,7 @@ footer{
     border: none;
     cursor: pointer;
     transition: all .5s;
+    background-color:rgb(209, 212, 212);
 }
 .project-button button:hover{
     background-color: rgb(159, 168, 168);
