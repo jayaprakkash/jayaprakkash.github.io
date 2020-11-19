@@ -144,12 +144,12 @@
                </div>
                <div class="contact-us">
                    <h2>Contact Us</h2>
-                   <form action="" id="form">
-                       <input type="text" placeholder="Name" required class="input">
-                       <input type="email" placeholder="Email" required class="input">
-                       <input type="tel" placeholder="Mobile Number" required class="input">
-                       <textarea placeholder="Your message here..."></textarea>
-                       <input type="submit" value="Send" class="submit">
+                   <form action="contactForm.php" id="form" method="post">
+                       <input type="text" placeholder="Name" name = "name" required class="input">
+                       <input type="email" placeholder="Email" name = "email"required class="input">
+                       <input type="tel" placeholder="Mobile Number" name = "mobie"required class="input">
+                       <textarea placeholder="Your message here..." name="message"></textarea>
+                       <input type="submit" value="Send" name="submit" class="submit">
 
                    </form>
 
